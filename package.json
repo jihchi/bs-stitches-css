@@ -1,0 +1,40 @@
+{
+  "name": "bs-stitches-css",
+  "version": "0.1.0",
+  "description": "@stitches/css bindings for BuckleScript in Reason",
+  "repository": "https://github.com/jihchi/bs-stitches-css.git",
+  "homepage": "https://github.com/jihchi/bs-stitches-css",
+  "bugs": {
+    "url": "https://github.com/jihchi/bs-stitches-css/issues"
+  },
+  "scripts": {
+    "build": "bsb -make-world",
+    "clean": "bsb -clean-world",
+    "prepublishOnly": "npm run build",
+    "start": "bsb -make-world -w",
+    "test": "bsb -make-world && jest"
+  },
+  "keywords": [
+    "BuckleScript",
+    "ReasonML",
+    "@stitches/css",
+    "css-in-js",
+    "css",
+    "library"
+  ],
+  "author": "Jihchi Lee <achi@987.tw>",
+  "license": "MIT",
+  "files": [
+    "/src/**/*.re",
+    "bsconfig.json"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.5.1",
+    "@stitches/css": "^2.0.3",
+    "bs-platform": "^7.2.2"
+  },
+  "peerDependencies": {
+    "@stitches/css": "^2.0.3"
+  }
+}
