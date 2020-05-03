@@ -12,7 +12,8 @@
     "clean": "bsb -clean-world",
     "prepublishOnly": "npm run build",
     "start": "bsb -make-world -w",
-    "test": "bsb -make-world && jest"
+    "pretest": "npm run clean && npm run build",
+    "test": "jest"
   },
   "keywords": [
     "BuckleScript",
@@ -32,7 +33,8 @@
   "devDependencies": {
     "@glennsl/bs-jest": "^0.5.1",
     "@stitches/css": "^2.0.3",
-    "bs-platform": "^7.2.2"
+    "bs-platform": "^7.2.2",
+    "jest": "^25.5.4"
   },
   "peerDependencies": {
     "@stitches/css": "^2.0.3"
